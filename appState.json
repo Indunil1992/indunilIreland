@@ -1,0 +1,102 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "7452fec7-9403-4af4-9b57-2ec26cb0831f": {
+        "id": "7452fec7-9403-4af4-9b57-2ec26cb0831f",
+        "parent": null,
+        "name": "indunilIreland",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "a5c6b928-8d9f-4986-bf5a-ef4a69c66a10"
+        ],
+        "isRemovable": false,
+        "filePath": "indunilIreland"
+      },
+      "a5c6b928-8d9f-4986-bf5a-ef4a69c66a10": {
+        "id": "a5c6b928-8d9f-4986-bf5a-ef4a69c66a10",
+        "parent": "7452fec7-9403-4af4-9b57-2ec26cb0831f",
+        "name": "lambda.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "indunilIreland/lambda.js",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "config": {
+          "runtime": "nodejs8.10",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": [
+          {
+            "resourceName": "apigeuWest1indunilIrelandinduniltstpatch",
+            "config": {}
+          }
+        ]
+      }
+    },
+    "deletedFiles": [],
+    "rootNode": "7452fec7-9403-4af4-9b57-2ec26cb0831f",
+    "openFiles": [
+      "a5c6b928-8d9f-4986-bf5a-ef4a69c66a10"
+    ],
+    "currentFileId": "a5c6b928-8d9f-4986-bf5a-ef4a69c66a10",
+    "resources": {
+      "apigeuWest1indunilIrelandinduniltstpatch": {
+        "name": "apigeuWest1indunilIrelandinduniltstpatch",
+        "type": "API_GATEWAY",
+        "config": {
+          "selectedRegion": "eu-west-1",
+          "apiMode": 0,
+          "apiName": "indunilIreland",
+          "endpointType": "REGIONAL",
+          "resourceMode": 0,
+          "resourceName": "indunil/tst",
+          "resourcePath": "/indunil/tst",
+          "restMethod": "PATCH",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 0,
+          "stageName": "test",
+          "mode": 0
+        }
+      }
+    },
+    "customTemplate": {
+      "dialect": null,
+      "definitions": {}
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "indunilIreland",
+    "projectDescription": "indunilIreland",
+    "projectVersion": "1.0.0",
+    "projectRegion": "eu-west-1",
+    "platform": "AWS",
+    "platformRegions": {},
+    "lastSave": 1561376790537
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "indunilIreland",
+      "url": "https://github.com/Indunil1992/indunilIreland"
+    }
+  }
+}
